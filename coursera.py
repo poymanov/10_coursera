@@ -99,14 +99,14 @@ def output_courses_info_to_xlsx(courses_info):
 
 
 if __name__ == '__main__':
-     courses_list = get_courses_list()
+    courses_list = get_courses_list()
 
-     if not courses_list:
-         sys.exit('Failed to get courses urls')
+    if not courses_list:
+        sys.exit('Failed to get courses urls')
 
-     courses_info = get_courses_info(courses_list)
+    courses_info = get_courses_info(courses_list)
 
-     if not courses_info:
-         sys.exit('Failed to get courses info')
+    if not courses_info:
+        sys.exit('Failed to get courses info')
 
-     output_courses_info_to_xlsx(courses_info)
+    output_courses_info_to_xlsx(courses_info)
